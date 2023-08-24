@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.calculator {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.display {
+  height: 5rem;
+  width: 25rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.15rem;
+}
+
+.interaction-pad {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.interaction-pad .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.interaction-pad .interactive {
+  margin: 0.25rem 0.25rem;
+  padding: 1rem 0;
+  width: 6rem;
+  background-color: rgb(55, 55, 55);
+  border: 0.1rem solid rgb(55, 55, 55);
+  border-radius: 0.15rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: filter 0.25s;
+}
+
+.interaction-pad .interactive:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(125, 125, 125));
+}
