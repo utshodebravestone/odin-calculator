@@ -16,17 +16,56 @@
   background-color: rgb(255, 255, 255);
 }
 
+.credit {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.credit h1 {
+  font-size: 4rem;
+}
+
+.credit p {
+  font-size: 1rem;
+}
+
+.credit a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s;
+}
+
+.credit a:hover {
+  color: gray;
+}
+
 .display {
   height: 5rem;
   width: 25rem;
   padding: 0.5rem 1rem;
   display: flex;
-  justify-content: end;
-  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-weight: 300;
   background-color: rgb(225, 225, 225);
   border-radius: 0.15rem;
+}
+
+.display .upper-row {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.display .lower-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .interaction-pad {
